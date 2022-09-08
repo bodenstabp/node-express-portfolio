@@ -1,0 +1,58 @@
+{
+    "portfolio": [
+        { 
+            "id" : 0,
+            "project_name" : "Employee Directory",
+            "description" : 0,
+            "technologies" : ["SCSS", "CSS", "JS","HTML"],
+            "live_link" : "https://pabodev.com/employee-directory/",
+            "github_link" : "https://github.com/bodenstabp/employee-directory",
+            "image_urls" : ["/static/images/employee-directory-one","/static/images/employee-directory-two","/static/images/employee-directory-three"]
+        },
+        { 
+            "id" : 1,
+            "project_name" : "Phrase Hunter",
+            "description" : 0,
+            "technologies" : ["JS", "CSS", "HTML"],
+            "live_link" : "https://pabodev.com/phrase-hunter/",
+            "github_link" : "https://github.com/bodenstabp/phrase-hunter",
+            "image_urls" : ["/static/images/phrase-hunter-one","/static/images/phrase-hunter-two","/static/images/phrase-hunter-three"]
+        },
+        { 
+            "id" : 2,
+            "project_name" : "Interactive Form",
+            "description" : 0,
+            "technologies" : ["JS", "CSS", "HTML"],
+            "live_link" : "http://pabodev.com/interactive-form/",
+            "github_link" : "https://github.com/bodenstabp/interactive-form",
+            "image_urls" : ["/static/images/interactive-form-one","/static/images/interactive-form-two","/static/images/interactive-form-three"]
+        },
+        { 
+            "id" : 3,
+            "project_name" : "Eighth Bend Calculator",
+            "description" : 0,
+            "technologies" : ["JS", "CSS", "HTML"],
+            "live_link" : "https://pabodev.com/eighth-bends/",
+            "github_link" : "https://github.com/bodenstabp/eighth-bends",
+            "image_urls" : ["/static/images/eb-calculator-one","/static/images/eb-calculator-two","/static/images/eb-calculator-three"]
+        },
+        { 
+            "id" : 4,
+            "project_name" : "Webapp Social Page",
+            "description" : 0,
+            "technologies" : ["JS", "SCSS", "CSS", "HTML"],
+            "live_link" : "https://pabodev.com/webapp/",
+            "github_link" : "https://github.com/bodenstabp/webapp",
+            "image_urls" : ["/static/images/webapp-one","/static/images/webapp-two","/static/images/webapp-three"]
+        },
+        { 
+            "id" : 5,
+            "project_name" : "Pagination Form",
+            "description" : 0,
+            "technologies" : ["JS", "CSS", "HTML"],
+            "live_link" : "http://pabodev.com/pagination/",
+            "github_link" : "https://github.com/bodenstabp/pagination",
+            "image_urls" : ["/static/images/pagination-one","/static/images/pagination-two","/static/images/pagination-three"]
+        }
+    ]
+}
