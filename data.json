@@ -3,47 +3,47 @@
         { 
             "id" : 0,
             "project_name" : "Employee Directory",
-            "description" : 0,
+            "description" : "A custom page that utilizes an API to randomly generate users. It includes a dynamic search function and a simple but pleasant interface.",
             "technologies" : ["SCSS", "CSS", "JS","HTML"],
             "live_link" : "https://pabodev.com/employee-directory/",
             "github_link" : "https://github.com/bodenstabp/employee-directory",
-            "image_urls" : ["/static/images/employee-directory-one","/static/images/employee-directory-two","/static/images/employee-directory-three"]
+            "image_urls" : ["/static/images/employee-directory-one.png","/static/images/employee-directory-two.png","/static/images/employee-directory-three.png"]
         },
         { 
             "id" : 1,
             "project_name" : "Phrase Hunter",
-            "description" : 0,
+            "description" : "A game which generates a hidden phrase to which the player must guess the letters. The player can win or lose based on their choices but can always try again.",
             "technologies" : ["JS", "CSS", "HTML"],
             "live_link" : "https://pabodev.com/phrase-hunter/",
             "github_link" : "https://github.com/bodenstabp/phrase-hunter",
-            "image_urls" : ["/static/images/phrase-hunter-one","/static/images/phrase-hunter-two","/static/images/phrase-hunter-three"]
+            "image_urls" : ["/static/images/phrase-hunter-one.png","/static/images/phrase-hunter-two.png","/static/images/phrase-hunter-three.png"]
         },
         { 
             "id" : 2,
-            "project_name" : "Interactive Form",
-            "description" : 0,
-            "technologies" : ["JS", "CSS", "HTML"],
-            "live_link" : "http://pabodev.com/interactive-form/",
-            "github_link" : "https://github.com/bodenstabp/interactive-form",
-            "image_urls" : ["/static/images/interactive-form-one","/static/images/interactive-form-two","/static/images/interactive-form-three"]
+            "project_name" : "Webapp Social Page",
+            "description" : "This faux social media page displays information with a simple user interface. There are numerous interactions that the user can make and the page works with local storage to save user settings.",
+            "technologies" : ["JS", "SCSS", "CSS", "HTML"],
+            "live_link" : "https://pabodev.com/webapp/",
+            "github_link" : "https://github.com/bodenstabp/webapp",
+            "image_urls" : ["/static/images/webapp-one.png","/static/images/webapp-two.png","/static/images/webapp-one.png"]
         },
         { 
             "id" : 3,
+            "project_name" : "Interactive Form",
+            "description" : "",
+            "technologies" : ["JS", "CSS", "HTML"],
+            "live_link" : "http://pabodev.com/interactive-form/",
+            "github_link" : "https://github.com/bodenstabp/interactive-form",
+            "image_urls" : ["/static/images/form-one.png","/static/images/form-two.png","/static/images/form-three.png"]
+        },
+        { 
+            "id" : 4,
             "project_name" : "Eighth Bend Calculator",
             "description" : 0,
             "technologies" : ["JS", "CSS", "HTML"],
             "live_link" : "https://pabodev.com/eighth-bends/",
             "github_link" : "https://github.com/bodenstabp/eighth-bends",
-            "image_urls" : ["/static/images/eb-calculator-one","/static/images/eb-calculator-two","/static/images/eb-calculator-three"]
-        },
-        { 
-            "id" : 4,
-            "project_name" : "Webapp Social Page",
-            "description" : 0,
-            "technologies" : ["JS", "SCSS", "CSS", "HTML"],
-            "live_link" : "https://pabodev.com/webapp/",
-            "github_link" : "https://github.com/bodenstabp/webapp",
-            "image_urls" : ["/static/images/webapp-one","/static/images/webapp-two","/static/images/webapp-three"]
+            "image_urls" : ["/static/images/eb-calculator-one.png","/static/images/eb-calculator-two.png","/static/images/eb-calculator-three.png"]
         },
         { 
             "id" : 5,
@@ -52,7 +52,7 @@
             "technologies" : ["JS", "CSS", "HTML"],
             "live_link" : "http://pabodev.com/pagination/",
             "github_link" : "https://github.com/bodenstabp/pagination",
-            "image_urls" : ["/static/images/pagination-one","/static/images/pagination-two","/static/images/pagination-three"]
+            "image_urls" : ["/static/images/pagination-three.png","/static/images/pagination-one.png","/static/images/pagination-two.png"]
         }
     ]
 }

@@ -7,18 +7,13 @@ block content
 
     p This page acts as the gallery and directory for the code that is most illustrative of my abilities. It provides links to the projects themselves and their code operating behind the scenes.
 
-
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
-      .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550', alt='Placeholder')
-          h5 My Site
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
-      
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
+      each project in portfolio
+        .cell
+          a(href=`/project/${project.id}`)
+            img.thumbnail(src=`${project.image_urls[0]}`, alt=`${project.project_name} Image`)
+            h5 #{project.project_name}
+        
 

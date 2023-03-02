@@ -5,7 +5,7 @@ const router = express.Router();
 const { portfolio } = require('../data.json');
 
 router.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', { portfolio });
 });
 
 module.exports = router;

@@ -5,11 +5,14 @@ const pug = require('pug');
 const app = express();
 const port = 3000;
 
+// Load portfolio JSON file
+// const { portfolio } = require('./data.json');
+
 // Load static files
 app.use('/static', express.static('public'));
 
 // Load View Engine
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // Routes
@@ -20,6 +23,21 @@ const projectRoutes = require('./routes/project');
 app.use(mainRoutes);
 app.use('/project', projectRoutes);
 app.use('/about', aboutRoutes);
+
+// 404 Page not found and any not 200 error handler
+app.use((req, res, next) => {
+  if (res.status(404)) {
+    const err = new Error('404 Error');
+    err.status = res.status;
+    res.render('page-not-found');
+    return next(err);
+  } else if (res.statusCode == !200) {
+    const err = new Error('404 Error');
+    res.render('error');
+    return next(err);
+  }
+  next();
+});
 
 // Listens at port specified in variables
 app.listen(port, console.log(`Port is running at ${port}`));
