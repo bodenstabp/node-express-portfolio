@@ -26,19 +26,21 @@ app.use('/about', aboutRoutes);
 
 // 404 error handler
 app.use((req, res, next) => {
-  res.status(404).render('page-not-found');
-  next();
+  const err = new Error();
+  err.status = 404;
+  err.message = 'Something went wrong.';
+  next(err);
 });
 
 // Global error handler
 app.use((err, req, res, next) => {
   if (err) {
-    console.log('Something went wrong', err);
+    console.log('Something went wrong.', err);
   }
   if (err.status === 404) {
     res.status(404).render('page-not-found', { err });
   } else {
-    err.message || 'Something went wrong on the server.';
+    err.message || 'Something went wrong.';
     res.status(err.status || 500).render('error', { err });
   }
 });

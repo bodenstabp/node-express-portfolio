@@ -2,8 +2,12 @@ extends layout.pug
 
 block content
 
-article.portfolio-intro
+    article.portfolio-intro
 
-    h1 Something went wrong! 
+        h1 Something went wrong.
 
-    a(href="/") Go Home
+        p #{err.status} 
+        p #{err.message} 
+        p #{err.stack} 
+
+        a(href="/") Go Home
