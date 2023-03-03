@@ -24,19 +24,23 @@ app.use(mainRoutes);
 app.use('/project', projectRoutes);
 app.use('/about', aboutRoutes);
 
-// 404 Page not found and any not 200 error handler
+// 404 error handler
 app.use((req, res, next) => {
-  if (res.status(404)) {
-    const err = new Error('404 Error');
-    err.status = res.status;
-    res.render('page-not-found');
-    return next(err);
-  } else if (res.statusCode == !200) {
-    const err = new Error('404 Error');
-    res.render('error');
-    return next(err);
-  }
+  res.status(404).render('page-not-found');
   next();
+});
+
+// Global error handler
+app.use((err, req, res, next) => {
+  if (err) {
+    console.log('Something went wrong', err);
+  }
+  if (err.status === 404) {
+    res.status(404).render('page-not-found', { err });
+  } else {
+    err.message || 'Something went wrong on the server.';
+    res.status(err.status || 500).render('error', { err });
+  }
 });
 
 // Listens at port specified in variables
